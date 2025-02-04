@@ -15,3 +15,6 @@
 
 **filled and outlined box with custom lenght and weight** 
 
+## Task 6
+
+**pascal triangle**
