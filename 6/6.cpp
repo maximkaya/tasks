@@ -1,29 +1,28 @@
 #include <iostream>
-#include <vector>
 
-void pascal(int n) {
-    std::vector<std::vector<int>> triangle(n);
-    
-    for (int i = 0; i < n; i++) {
-        triangle[i].resize(i + 1);
-        triangle[i][0] = triangle[i][i] = 1;
-        
-        for (int j = 1; j < i; j++) {
-            triangle[i][j] = triangle[i - 1][j - 1] + triangle[i - 1][j];
+void pascal(int n){
+        int triangle[n][n];
+
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j <= i; j++){
+                if (j == 0 || j == i){
+                    triangle[i][j] = 1;
+                }
+                else
+                {
+                    triangle[i][j] = triangle[i - 1][j-1] + triangle[i-1][j];
+                }
+                std::cout << triangle[i][j] << " ";
+            }
+            std::cout << std::endl;
         }
     }
-    
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j <= i; j++) {
-            std::cout << triangle[i][j] << " ";
-        }
-        std::cout << std::endl;
-    }
-}
 
-int main() {
+
+int main()
+{
     int n;
-    std::cout << "number:";
+    std::cout << "number";
     std::cin >> n;
     pascal(n);
     return 0;
