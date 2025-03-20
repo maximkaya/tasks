@@ -1,7 +1,8 @@
-TARGET = vector.exe 
+TARGET = main.out 
 CXX = g++
 CXXFLAGS = -Wall -std=c++17
-OBJS = vector.o main.o 
+SRC = $(wildcard *.cpp)
+OBJS = $(patsubst %.cpp, %.o, $(SRC))
 
 
 $(TARGET): main.o vector.o 
@@ -15,3 +16,6 @@ $(TARGET): $(OBJS)
 	$(CXX) $(OBJS) -o $(TARGET)
 clean:
 	rm -f *.o $(TARGET)
+
+print:
+	echo $(SRC)
