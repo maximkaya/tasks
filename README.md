@@ -1,20 +1,8 @@
 # My c++ tasks
-## Task 1
+## easy
 
-**simple hello world app** 
+**easy tasks** 
 
-## Task 2
+## tsikavi
 
-**simple hello user app** 
-
-## Task 3
-
-**simple exercises with numbers**
-
-## Task 4
-
-**filled and outlined box with custom lenght and weight** 
-
-## Task 6
-
-**pascal triangle**
+**tsikavi tasks** 
