@@ -6,3 +6,8 @@
 ## tsikavi
 
 **tsikavi tasks** 
+
+
+## python
+
+**python practice**
